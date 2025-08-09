@@ -16,7 +16,7 @@ echo "
 echo "--------------------------------------------------------------"
 
 # Creating testing
-mkdir temp && cd temp
+mkdir temp && cd ./temp
 
 # subfidner
 echo "[+] Installing subfinder..."
@@ -73,11 +73,9 @@ git clone https://github.com/aboul3la/Sublist3r.git 1>/dev/null
 sudo mv sublist3r /opt/tools
 
 # findomain
-echo "[+] Installing findomain..."
-curl -LO https://github.com/findomain/findomain/releases/latest/download/findomain-aarch64.zip -s
-unzip findomain-aarch64.zip 1>/dev/null
+curl -LO https://github.com/findomain/findomain/releases/latest/download/findomain-linux.zip
+unzip findomain-linux.zip
 chmod +x findomain
-rm findomain-aarch64.zip
 sudo mv findomain /opt/tools/findomain
 
 # waybackurls
